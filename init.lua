@@ -6,6 +6,7 @@ require("plugins-setup")
 
 require("lsp.lsp")
 
+require("plugins-settings.toggle-term")
 require("plugins-settings.tree-sitter")
 require("plugins-settings.nvim-tree")
 require("plugins-settings.lua-line")

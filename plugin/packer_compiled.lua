@@ -148,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/salah/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/salah/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   }
 }
 

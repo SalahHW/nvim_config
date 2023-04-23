@@ -33,6 +33,9 @@ return require('packer').startup(function(use)
     -- LSP --
     use({'neovim/nvim-lspconfig'})
 
+    -- toggleterm --
+    use({'akinsho/toggleterm.nvim'})
+
     -- lualine --
     use({'nvim-lualine/lualine.nvim'})
 
