@@ -57,7 +57,7 @@ return require('packer').startup(function(use)
     use({'lewis6991/gitsigns.nvim'})
 
     -- colorscheme --
-    use({'rose-pine/neovim', as = 'rose-pine'})
+    use({'catppuccin/nvim', as = 'catppuccin'})
 
     if packer_bootstrap then
         require('packer').sync()
