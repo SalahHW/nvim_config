@@ -26,12 +26,24 @@ return require('packer').startup(function(use)
     use({'nvim-tree/nvim-tree.lua'})
     use({'nvim-tree/nvim-web-devicons'})
 
+	-- autopair --
+	use({'windwp/nvim-autopairs'})
+
     -- 42 --
     use({'42Paris/42header'})
     use({'cacharle/c_formatter_42.vim'})
 
     -- LSP --
     use({'neovim/nvim-lspconfig'})
+
+	-- CMP --
+	use({'hrsh7th/nvim-cmp'})
+	use({'hrsh7th/cmp-buffer'})
+	use({'hrsh7th/cmp-path'})
+
+	-- Snippets --
+	use({'hrsh7th/cmp-vsnip'})
+	use({'hrsh7th/vim-vsnip'})
 
     -- toggleterm --
     use({'akinsho/toggleterm.nvim'})
@@ -56,8 +68,11 @@ return require('packer').startup(function(use)
     -- gitsigns --
     use({'lewis6991/gitsigns.nvim'})
 
+    -- copilot --
+    use({'github/copilot.vim'})
+
     -- colorscheme --
-    use({'catppuccin/nvim', as = 'catppuccin'})
+	use({'rose-pine/neovim', as = 'rose-pine'})
 
     if packer_bootstrap then
         require('packer').sync()
