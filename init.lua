@@ -1,17 +1,16 @@
 require("core.mappings")
 require("core.options")
-require("core.colorscheme")
 
-require("plugins-setup")
+require("plugins")
 
 require("lsp.lsp")
 
-require("plugins-settings.cmp")
+require("settings.cmp")
 
-require("plugins-settings.toggle-term")
-require("plugins-settings.tree-sitter")
-require("plugins-settings.nvim-tree")
-require("plugins-settings.lua-line")
-require("plugins-settings.buffer-line")
-require("plugins-settings.git-signs")
-require("plugins-settings.autopair")
+require("settings.toggle-term")
+require("settings.tree-sitter")
+require("settings.nvim-tree")
+require("settings.lua-line")
+require("settings.buffer-line")
+require("settings.git-signs")
+require("settings.autopair")
