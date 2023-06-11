@@ -6,9 +6,6 @@ require("core.options")
 
 require("lsp.lsp")
 
-require("settings.cmp")
-
-require("settings.toggle-term")
 require("settings.tree-sitter")
 require("settings.nvim-tree")
 require("settings.lua-line")
