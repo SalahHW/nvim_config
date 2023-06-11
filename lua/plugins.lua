@@ -12,6 +12,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+	-- colorscheme --
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	-- nvim-tree --
 	{'nvim-tree/nvim-tree.lua'},
 	{'nvim-tree/nvim-web-devicons'},
@@ -47,10 +49,7 @@ local plugins = {
 	{'lewis6991/gitsigns.nvim'},
 	-- copilot --
 	{'github/copilot.vim'}, 
-	{"catppuccin/nvim", name = "catppuccin"}
 }
-
-vim.cmd.colorscheme "catppuccin"
 
 local opts = {}
 

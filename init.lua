@@ -1,7 +1,8 @@
+require("plugins")
+
+require("core.colorscheme")
 require("core.mappings")
 require("core.options")
-
-require("plugins")
 
 require("lsp.lsp")
 
