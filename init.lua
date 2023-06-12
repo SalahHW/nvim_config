@@ -6,6 +6,7 @@ require("core.options")
 
 require("lsp.lsp")
 
+require("settings.neodev")
 require("settings.tree-sitter")
 require("settings.nvim-tree")
 require("settings.lua-line")

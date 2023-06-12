@@ -49,6 +49,8 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+keymap("n", "k", "v:count == 0 ? 'gk' : 'k'", {expr = true, silent = true})
+keymap("n", "j", "v:count == 0 ? 'gj' : 'j'", {expr = true, silent = true})
 
 --      commands
 keymap({"n", "v"}, "<leader>n", ":nohls<CR>", opts)         -- clear research
