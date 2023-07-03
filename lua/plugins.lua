@@ -26,12 +26,16 @@ local plugins = {
 	-- 42 --
 	{'42Paris/42header'},
 	{'cacharle/c_formatter_42.vim'},
+	-- mason --
+	{'williamboman/mason.nvim'},
 	-- LSP --
 	{'neovim/nvim-lspconfig'},
 	-- CMP --
-	{'hrsh7th/nvim-cmp'},
+	{'hrsh7th/cmp-nvim-lsp'},
 	{'hrsh7th/cmp-buffer'},
 	{'hrsh7th/cmp-path'},
+	{'hrsh7th/cmp-cmdline'},
+	{'hrsh7th/nvim-cmp'},
 	-- Snippets --
 	{'hrsh7th/cmp-vsnip'},
 	{'hrsh7th/vim-vsnip'},
