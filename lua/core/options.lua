@@ -55,8 +55,8 @@ opt.updatetime = 250        -- ms to wait for trigger an event
 -----------------------------------------------------------
 -- 42
 -----------------------------------------------------------
-g.user42 = 'sbouheni'
-g.mail42 = 'sbouheni@student.42mulhouse.fr'
+g.user42 = 'joakoeni'
+g.mail42 = 'joakoeni@student.42mulhouse.fr'
 
 -----------------------------------------------------------
 -- Startup
