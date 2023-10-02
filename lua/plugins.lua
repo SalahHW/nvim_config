@@ -23,6 +23,8 @@ local plugins = {
 	{'windwp/nvim-autopairs'},
 	-- which-key --
 	{"folke/which-key.nvim", opts = {}},
+	-- telescope --
+	{'nvim-telescope/telescope.nvim', tag = '0.1.3', dependencies = { 'nvim-lua/plenary.nvim' }},
 	-- 42 --
 	{'42Paris/42header'},
 	{'cacharle/c_formatter_42.vim'},
