@@ -17,9 +17,7 @@ local opts = {noremap = true, silent = true}
 -- ===========================================
 
 -- 		windows navigation
---  spliting
-keymap("n", "<leader>v", "<C-w>v")                          -- split window verticaly
-keymap("n", "<leader>s", "<C-w>s")                          -- split window horizontaly
+--
 --  moving
 keymap({"n", "v", "i", "t"}, "<C-h>", "<C-w>h")             -- move left
 keymap({"n", "v", "i", "t"}, "<C-l>", "<C-w>l")             -- move right
@@ -30,9 +28,8 @@ keymap("n", "<C-Left>", ":vertical resize -1<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +1<CR>", opts)
 keymap("n", "<C-Up>", ":resize +1<CR>", opts)
 keymap("n", "<C-Down>", ":resize -1<CR>", opts)
-keymap("n", "<leader>=", "<C-w>=")					    	-- equalize windows size
 
-keymap("n", "<leader>c", ":bp | sp | bn | bd<CR>", opts)               -- close window
+keymap("n", "<leader>c", ":bp | sp | bn | bd<CR>", { desc = '[C]lose buffer', silent = true } )
 
 --		buffers navigation
 
@@ -68,9 +65,9 @@ vim.api.nvim_set_keymap('s', '<Tab>', 'vsnip#jumpable(1) ? "<Plug>(vsnip-jump-ne
 vim.api.nvim_set_keymap('i', '<S-Tab>', 'vsnip#jumpable(-1) ? "<Plug>(vsnip-jump-prev)" : "<S-Tab>"', { expr = true })
 vim.api.nvim_set_keymap('s', '<S-Tab>', 'vsnip#jumpable(-1) ? "<Plug>(vsnip-jump-prev)" : "<S-Tab>"', { expr = true })
 
+--		Highlight on yanking		--
 vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight when yanking (copying) text',
-  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+  desc = 'Highlight when yanking text',
   callback = function()
     vim.highlight.on_yank()
   end,
