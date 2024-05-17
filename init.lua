@@ -1,2 +1,2 @@
-require('settings.options')
-require('plugins.lazy')
+require 'settings.options'
+require 'plugins.lazy.lazy-bootstrap'

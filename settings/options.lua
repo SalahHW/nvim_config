@@ -12,6 +12,9 @@ local opt = vim.opt -- Set options (global/buffer/windows-scoped)
 -----------------------------------------------------------
 -- General
 -----------------------------------------------------------
+--g.loaded_netrw = 1
+--g.loaded_netrwPlugin = 1
+
 g.mapleader = " "
 g.maplocalleader = " "
 g.have_nerd_font = true
@@ -20,6 +23,7 @@ opt.clipboard = "unnamedplus" -- Copy/paste to system clipboard
 opt.swapfile = false -- Don't use swapfile
 opt.completeopt = "menuone,noinsert,noselect" -- Autocomplete options
 opt.undofile = true -- Save undo history
+g.loaded_ruby_provider = 0
 
 -----------------------------------------------------------
 -- Neovim UI
