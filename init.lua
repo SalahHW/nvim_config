@@ -1,3 +1,2 @@
-require('core.options')
+require('settings.options')
 require('plugins.lazy')
---require("kickstart")
