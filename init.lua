@@ -1,12 +1,9 @@
--- basics
+--NOTE: basics
 require 'core.options'
+require 'core.keybinds'
 
--- plugin manager
+--NOTE: plugin manager
 require 'lazy-bootstrap'
 
--- plugins
-require 'settings.tree-sitter'
-require 'settings.nvim-tree'
-
--- colorscheme
-require 'settings.colorschemes.rose-pine'
+--NOTE:	Colorscheme
+require 'core.colorscheme'
